@@ -1,0 +1,23 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <error-page>
+        <exception-type>com.aeroBlasters.flightManagementSystem.exception.RouteException</exception-type>
+        <location>/WEB-INF/jsp/routeErrorPage.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>com.aeroBlasters.flightManagementSystem.exception.AirportException</exception-type>
+        <location>/WEB-INF/jsp/airportErrorPage.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>com.aeroBlasters.flightManagementSystem.exception.TicketException</exception-type>
+        <location>/WEB-INF/jsp/ticketErrorPage.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/jsp/errorPage.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/jsp/errorPage.jsp</location>
+    </error-page>
+</web-app>
